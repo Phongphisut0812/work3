@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>ออกใบสั่ง</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/form-validation.css">
+    <link rel="stylesheet" href="css/form-validation.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container ">
+        <div class="py-5 text-center ">
+            <i class="fas fa-car-alt fa-10x text-success"></i>
+            <h2><b> ใบสั่งเจ้าพนักงานจราจรหรือพนักงานเจ้าหน้าที่</b></h2>
+        </div>
+
+        <label for="other"><b> &nbsp;ชื่อผู้ขับขี่,เจ้าของหรือผู้ครอบครอง</b></label>
+        <div class="row">
+            <div class=" col-md-6 mb-3">
+                <input type="text" class="form-control" id="other" placeholder="ชื่อผู้ขับขี่,เจ้าของหรือผู้ครอบครอง">
+            </div>
+        </div>
+        <label><b> &nbsp;ที่อยู่</b></label>
+        <div class="row  mb-3 ">
+            <div class=" col-md-4 mb-3">
+                <label for="cc-name">&nbsp;&nbsp;ตรอก/ซอย</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="ตรอก/ซอย" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;ถนน</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="ถนน" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;ตำบล/แขวง</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="ตำบล/แขวง" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;อำเภอ/เขต</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="อำเภอ/เขต" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;จังหวัด</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="จังหวัด" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;รหัสไปรษณีย์</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="รหัสไปรษณีย์" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;โทรศัพท์</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="โทรศัพท์" required>
+            </div>
+        </div>
+
+        <label for="other"><b>ข้อหา</b></label>
+        <div class="row">
+            <div class=" col-md-12 mb-3">
+                <input type="text" class="form-control" id="other" placeholder="...">
+            </div>
+        </div>
+
+        <div>
+            <label for="cc">&nbsp;&nbsp;&nbsp;&nbsp;ความเร็วที่กฎหมายกำหนด&nbsp;<input type="text" id="zip" placeholder="" required>&nbsp;กม./ชม.
+                ความเร็วที่ตรวจจับ&nbsp;<input type="text" id="zip" placeholder="" required>&nbsp;กม./ชม.
+                ช่องที่เดินรถที่&nbsp;<input type="text" id="zip" placeholder="" required>&nbsp;หมายเลขทะเบียนรถ&nbsp;<input type="text"
+                    id="zip" placeholder="" required></label>
+
+            <label for="cc"> &nbsp;&nbsp;&nbsp;&nbsp;อาศัยอำนาจตามความในมาตรา 140 วรรคหนึ่ง แห่ง พ.ร.บ.จราจรทางบก พ.ศ.2522 ซึ่งแก้ไขเพิ่มเติมโดย
+                พ.ร.บ.จราจรทางบก (ฉบับที่ 9 ) พ.ศ.2557 และมาตรา 141 แห่ง พ.ร.บ.จราจรทางบก พ.ศ.2522 ซึ่งแก้ไขเพิ่มโดย
+                พ.ร.บ.จราจรทางบก(ฉบับที่ 11)พ.ศ.2559 ให้ผู้ขับขี่หรือเจ้าของรถหรือผู้ครอบครองรถ
+                ไปชำระค่าปรับตาม<b>ข้อกำหนดสำนักงานตำรวจแห่งชาติ</b>ต่อพนักงานสอบสวน
+                หรือชำระด้วยวิธีอื่นใดตามที่ระบุไว้ด้านหลังใบสั่งนี้</label>
+        </div>
+        <div class="py-5 text-center ">
+            <h3><b> โปรดอ่านคำเตือนและวิธีการชำระค่าปรับด้านหลัง</b></h3>
+        </div>
+
+        <h5><B>ผู้ออกใบสั่ง</B></h5>
+        <div class="row  mb-3 ">
+            <div class=" col-md-6 mb-3">
+                <label for="cc-name">&nbsp;&nbsp;ชื่อ-นามสกุล</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="ชื่อ-นามสกุล" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;รหัส</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="รหัส" required>
+            </div>
+        </div>
+
+        <h5><B>หน่วยงานผู้ออกใบสั่ง</B></h5>
+        <div class="row  mb-3 ">
+            <div class=" col-md-4 mb-3">
+                <label for="cc-name">&nbsp;&nbsp;ตรอก/ซอย</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="ตรอก/ซอ" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;ถนน</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="ถนน" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;ตำบล/แขวง</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="ตำบล/แขวง" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;อำเภอ/เขต</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="อำเภอ/เขต" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;จังหวัด</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="จังหวัด" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;รหัสไปรษณีย์</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="รหัสไปรษณีย์" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;โทรศัพท์</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="โทรศัพท์" required>
+            </div>
+        </div>
+
+
+        <div class="row  mb-3 ">
+            <div class=" col-md-6 mb-3">
+                <label for="cc-name">&nbsp;&nbsp;ชื่อ-นามสกุล ผู้รับ</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="ชื่อ-นามสกุล" required>
+            </div>
+            <div class=" col-md-6 mb-3">
+                <label for="cc-name">&nbsp;&nbsp;ตรอก/ซอย</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="ตรอก/ซอย" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;ถนน</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="ถนน" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;ตำบล/แขวง</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="ตำบล/แขวง" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;อำเภอ/เขต</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="อำเภอ/เขต" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;จังหวัด</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="จังหวัด" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;รหัสไปรษณีย์</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="รหัสไปรษณีย์" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;โทรศัพท์</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="โทรศัพท์" required>
+            </div>
+        </div>
+
+        <div class="row  mb-3 ">
+            <div class=" col-md-4 mb-3">
+                <label for="cc-name">&nbsp;&nbsp;เลขที่ใบสั่ง</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="เลขที่ใบสั่ง" required>
+            </div>
+            <div class=" col-md-4 mb-3">
+                <label for="cc-name">&nbsp;&nbsp;วันเวลากระทำผิด</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="วันเวลากระทำผิด" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;จำนวนค่าปรับ</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="จำนวนค่าปรับ" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;วันครบกำหนดชำระ</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="วันครบกำหนดชำระ" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;คะแนนที่ถูกบันทึกเดิม</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="คะแนนที่ถูกบันทึกเดิม" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;คะแนนที่ถูกบันทึกครั้งนี้</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="คะแนนที่ถูกบันทึกครั้งนี้" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;คะแนนที่ถูกบันทึกรวม</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="คะแนนที่ถูกบันทึกรวม" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cc-number">&nbsp;&nbsp;สถานะใบอนุญาตขับขี่</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="สถานะใบอนุญาตขับขี่" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01"><b> พยานหลักฐาน</b></span>
+                </div>
+                <div class="custom-file col-md-4">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01"
+                        aria-describedby="inputGroupFileAddon01">
+                    <label class="custom-file-label" for="inputGroupFile01">รูปภาพ</label>
+                </div>
+            </div>
+        </div>
+
+        <a class="btn btn-primary " href="index.html" role="button">ย้อนกลับ</a>
+        <div>
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+        </div>
+
+
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2017-2020 Company Name</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+
+
+</html>
